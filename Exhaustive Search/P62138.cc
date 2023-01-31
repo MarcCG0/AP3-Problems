@@ -1,3 +1,11 @@
+/*
+There are n tasks, which have to be done one by one. Some tasks must be done before others: there are m precedence relations between tasks. Write a program that prints all possible ways to order the n tasks according to the m given precedences.
+
+Input consists of a natural number n ≥ 1, followed by a natural number m, followed by m different pairs x, y, indicating that task x must be done before task y. Suppose that the tasks are numbered from 0 to n − 1.
+
+Print, one per line and in lexicographic order, all the ways of sorting the n tasks according to the m given precedences. There will always be at least one solution.
+*/
+
 #include <iostream>
 #include <string>
 #include <vector>
