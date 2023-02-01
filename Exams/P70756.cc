@@ -1,3 +1,10 @@
+/*
+Write a program that, given n different words s1, …, sn and a number p, prints all the ways to share the words between p subsets.
+
+Input consists of a natural number n > 0, followed by s1, …, sn, followed by a natural number p > 0.
+
+Print all the ways to share the words between p subsets. The elements of each set must appear in the same order than in the input. Print an empty line after each partition.
+*/
 #include <iostream>
 #include <vector>
 
