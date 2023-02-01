@@ -1,3 +1,14 @@
+/*
+L’entrada comença amb n, el nombre de partits polítics. El segueixen parells ei, pi, un per cada 0 ≤ i < n, on ei és un natural que indica el nombre d’escons al parlament aconseguits pel partit i-èsim en les darreres eleccions, i pi és un natural entre 0 i 1000 que mesura el perfil polític del partit (sent 0 extrema esquerra, i 1000 extrema dreta). L’entrada conclou amb un natural m, que és la diferència màxima de perfil polític permesa entre els partits que no estan en contra de la investidura. Podeu assumir també que 2 ≤ n ≤ 20, que 1 ≤ ei ≤ 300, i que 0 ≤ m ≤ 1000.
+
+Escriviu cadascuna de les diferents possibilitats per investir president del govern (en segona ronda). Per a que això sigui possible, cal que hi hagi majoria simple: això és, que la suma dels vots a favor sigui més gran estrictament que la suma dels vots en contra; les abstencions no compten. Assumiu que els parlamentaris poden votar a favor, en contra, o abtenir-se; i que segueixen la disciplina de partit, això és, tots els membres d’un partit voten el mateix. També cal que la diferència de perfil polític entre dos partits qualssevol que estiguin a favor de la investidura o que s’abstinguin sigui no superior a m.
+
+Seguiu el format donat en els jocs de prova. Per cada 0 ≤ i < n, el partit i-èsim s’identifica amb i. A més d’escriure els partits a favor, els que s’abstenen i els que hi estan en contra, indiqueu també, dels partits a favor, els que tinguin més escons (ja que el candidat a president del govern serà d’un d’aquests partits).
+
+No importa l’ordre de les solucions, però a cada solució, els partits que voten a favor han d’estar ordenats de forma creixent; i igualment per als que s’abstenen i per als que voten en contra. També els partits a favor amb el màxim d’escons s’han d’escriure ordenats de la mateixa manera.
+
+Escriviu una línia en blanc després de cada solució.
+*/
 #include <iostream>
 #include <vector>
 #include <climits>
