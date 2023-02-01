@@ -5,14 +5,14 @@ using namespace std;
 
 using Matrix = vector<vector<string>>;
 
-void escriu(Matrix& M, int sb)
+void w(Matrix& M, int sb)
 {
     for (int i = 0; i < sb; ++i) {
         cout << "subconjunt " << i + 1 << ": {";
-        bool primer = true;
+        bool f = true;
         for (string& a : M[i]) {
-            if (primer) {
-                primer = false;
+            if (f) {
+                f = false;
                 cout << a;
             } else
                 cout << "," << a;
@@ -25,7 +25,7 @@ void escriu(Matrix& M, int sb)
 void generate_partitions(int sb, const vector<string>& words, Matrix& M, int k)
 {
     if (k == words.size())
-        escriu(M, sb);
+        w(M, sb);
 
     else
         for (uint i = 0; i < sb; ++i) {
